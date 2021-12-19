@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Even Fibonacci Numbers</title>
+</head>
+<body>
+    <p class="description">Finds value of all even numbers in 
+        the Fibonacci sequence up to the given number.</p>
+    <div class="container">
+        <input type="text" placeholder="Enter Number here:" id="number">
+        <button type="button" onclick="fiboEvenSum()" class="button">Enter</button>
+        <p>Answer is: <span id="answer"></span></p>
+        <script>
+            function fiboEvenSum() {
+                let input = document.getElementById("number").value;
+                let sum = 0;
+                let fibNum = 1; 
+                for (let i = 1; i <= input;) {
+                    if (i % 2 == 0) {
+                        sum += i;
+                    }
+                    let placeholder = i;
+                    i += fibNum;
+                    fibNum = placeholder;
+                }
+                document.getElementById("answer").innerHTML = sum;
+            }
+        </script>
+    </div>
+</body>
+</html>

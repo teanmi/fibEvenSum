@@ -1,0 +1,28 @@
+body {
+    background-color: aliceblue;
+}
+
+.description {
+    text-align: center;
+    margin: 1.5rem 37.5% 1rem;
+}
+
+.container {
+    text-align: center;
+}
+
+#number {
+    border-radius: 6px;
+    background-color: gainsboro;
+}
+
+.button {
+    border-radius: 6px;
+    background-color: gainsboro;
+}
+
+@media only screen and (max-width: 800px) {
+    .description {
+        margin: 1.5rem 30% 1rem
+    }
+}
